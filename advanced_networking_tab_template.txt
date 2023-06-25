@@ -15,7 +15,7 @@ vswitch.0.ports=/12  # TOTAL number of NICs on all VMs, plus 1
  
 vswitch.0.portgroup.0.id=/management  # Port group name (just like a physical switch)
 vswitch.0.portgroup.0.name.include.pod_id=1  
-vswitch.0.portgroup.0.name.suffix=/IDS_MGT_PG  # Suffix attached to the port group name when it’s created: NETLAB001_POD_suffix 
+vswitch.0.portgroup.0.name.suffix=/IDS_MGT_PG  # Suffix attached to the port group name when itâ€™s created: NETLAB001_POD_suffix 
 vswitch.0.portgroup.0.vlan.mode=TAGGED  
 vswitch.0.portgroup.0.vlan.id=1  
 vswitch.0.portgroup.0.allow_promiscuous=1  
@@ -43,10 +43,10 @@ pc.2.name=/IDS_Sensor  # Name for VM 2
 pc.2.net.vnic.1.portgroup.id=/management
  
 pc.3.name=/Kali_Linux  # Name for VM 3
-pc.3.net.vnic.1.portgroup.id=/production # Port group name for VM 4
+pc.3.net.vnic.1.portgroup.id=/production # Port group name for VM 3
  
 pc.4.name=/Metasploitable2  # Name for VM 4
 pc.4.net.vnic.1.portgroup.id=/production  # Port group name for VM 4
  
 pc.5.name=/Windows_Target  # Name for VM 5
-pc.5.net.vnic.1.portgroup.id=/production  # Port group name for VM 4
+pc.5.net.vnic.1.portgroup.id=/production  # Port group name for VM 5
