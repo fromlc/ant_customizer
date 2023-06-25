@@ -61,9 +61,9 @@ for x in f_in:
         print(option + use_setting + "\n")
         f_out.write(option + use_setting + "\n")
 
-# not a settable option, just write line to output file
-else:
-    f_out.write(x)
+    # not a settable option, just write line to output file
+    else:
+        f_out.write(x)
 
 f_in.close()
 f_out.close()
