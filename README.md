@@ -8,4 +8,10 @@ Simple customizer for Netlab's Advanced Networking Tab options
 - Outputs all Networking Tab options in template file to new file named 'advanced_networking_tab.txt'
 - File names are settable to whatever names you wish
 - To make any option settable, change = to /= and (optionally) append a description comment to the option line
-   - For instance, change \<option\>=\<setting\> to \<option\>/=\<setting\>  # description
+- For instance, change ```<option>=<setting>``` to ```<option>/=<setting>  # <description>```
+- This generates the following description and prompt lines:
+```
+# <description>
+<option>=[<setting>] ?
+```
+- Press the \<enter\> key to accept the option value in square brackets, or type a different value
