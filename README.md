@@ -7,5 +7,5 @@ Simple customizer for Netlab's Advanced Networking Tab options
 - Make sure the template input file and Python script exist in the same folder!
 - Outputs all Networking Tab options in template file to new file named 'advanced_networking_tab.txt'
 - File names are settable to whatever names you wish
-- To make any option settable, change = to /= and append a description comment to the option line
+- To make any option settable, change = to /= and (optionally) append a description comment to the option line
    - For instance, change \<option\>=\<setting\> to \<option\>/=\<setting\>  # description
