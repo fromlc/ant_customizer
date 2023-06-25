@@ -36,11 +36,11 @@ pc.same_runtime_host_required=1
 pc.boot.order=/2 3 4 5 1  # Boot order of the VMs in the pod
  
 pc.1.name=/IDS_Workstation  # Name for VM 1
-pc.1.net.vnic.1.portgroup.id=/production  # Port group name from above to assign to the first VNIC
-pc.1.net.vnic.2.portgroup.id=/management  # Port group name from above to assign to the second VNIC
+pc.1.net.vnic.1.portgroup.id=/production  # Port group name from above to assign to VM 1's VNIC 1
+pc.1.net.vnic.2.portgroup.id=/management  # Port group name from above to assign to VM 1's VNIC 2
  
 pc.2.name=/IDS_Sensor  # Name for VM 2
-pc.2.net.vnic.1.portgroup.id=/management
+pc.2.net.vnic.1.portgroup.id=/management # Port group name for VM 2
  
 pc.3.name=/Kali_Linux  # Name for VM 3
 pc.3.net.vnic.1.portgroup.id=/production # Port group name for VM 3
