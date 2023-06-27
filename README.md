@@ -7,11 +7,13 @@ Simple customizer for Netlab's Advanced Networking Tab options
 - Make sure the template input file and Python script exist in the same folder!
 - Outputs all Networking Tab options in template file to new file named 'advanced_networking_tab.txt'
 - File names are settable to whatever names you wish
-- To make any option settable, change = to /= and (optionally) append a description comment to the option line
-- For instance, change ```<option>=<setting>``` to ```<option>/=<setting>  # <description>```
-- This generates the following description and prompt lines:
+- To make any option settable, change ```<option>=<setting>``` to ```<option>/=<setting>  # <description>```
+  - The ```# <description>``` comment is optional
+- For instance, change
+```vswitch.0.ports=12``` to ```vswitch.0.ports=/12  # TOTAL number of NICs on all VMs, plus 1```
+- To generate this description and prompt:
 ```
-# <description>
-<option>=[<setting>] ?
+# TOTAL number of NICs on all VMs, plus 1
+vswitch.0.ports=[12] ?
 ```
 - Press the \<enter\> key to accept the option value in square brackets, or type a different value
